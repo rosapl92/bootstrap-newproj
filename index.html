@@ -264,7 +264,7 @@
 <button type="button" class="btn btn-primary mt-4" id="MyButton">Show live toast</button>
 
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div id="MyToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
             <img src="..." class="rounded me-2" alt="...">
             <strong class="me-auto">Bootstrap</strong>
@@ -281,10 +281,10 @@
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script>
     var toastTrigger = document.getElementById('MyButton')
-    var toastLiveExample = document.getElementById('liveToast')
+    var MyToast = document.getElementById('MyToast')
     if (toastTrigger) {
         toastTrigger.addEventListener('click', function () {
-            var toast = new bootstrap.Toast(toastLiveExample)
+            var toast = new bootstrap.Toast(MyToast)
 
             toast.show()
         })
